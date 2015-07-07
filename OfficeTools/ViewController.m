@@ -18,8 +18,10 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view, typically from a nib.
     
 //    [self.view setBackgroundColor:[UIColor clearColor]];
@@ -40,6 +42,15 @@
     [_dataArr addObjectsFromArray:[self getFiles:[self documentsFilePath:nil] withFilterString:nil]];
     
     [_tableViewController.tableView reloadData];
+    
+//    _tableViewController.view.autoresizingMask=UIViewAutoresizingFlexibleHeight;
+//    [_tableViewController.view setBackgroundColor:[UIColor redColor]];
+//    _tableViewController.view.frame=CGRectMake(0,64, self.view.frame.size.width , self.view.frame.size.height);
+    
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0) {
+        self.edgesForExtendedLayout=UIRectEdgeNone;
+    }
+    _tableViewController.view.frame=CGRectMake(0,0,self.view.bounds.size.width, self.view.bounds.size.height);
     
 
 }
@@ -68,9 +79,8 @@
 -(NSString *) documentsFilePath:(NSString *)fileName {
     
 //    NSString *documentsDirectory0 = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-//      NSString *dir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 //    
-//    NSLog(@"documentsDirectory0 %@ ,dir %@  %@  %@",documentsDirectory0,dir,[[NSBundle mainBundle] bundlePath],NSTemporaryDirectory());
+//   NSLog(@"documentsDirectory0 %@ ",documentsDirectory0);
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -93,12 +103,10 @@
     NSString* fileName = [_dataArr objectAtIndex:indexPath.row];
     _readViewController.navigationItem.title=fileName;
     NSString *documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    
 
-    
     NSString* _urlStr=[NSString stringWithFormat:@"%@/%@",documentsDirectory,[fileName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
-    NSLog(@"_urlStr %@",_urlStr);
+//    NSLog(@"_urlStr %@",_urlStr);
     
     [_readViewController loadOfficeData:_urlStr];
 }

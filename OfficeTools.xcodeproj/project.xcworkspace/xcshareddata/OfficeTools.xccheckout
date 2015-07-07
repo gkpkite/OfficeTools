@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B610627D-847B-41EB-A6AA-3181F848A927</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OfficeTools</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D9741CA269FB7137F74121263D3C4CC06D7D7AA1</key>
+		<string>https://github.com/gkpkite/OfficeTools.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OfficeTools.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D9741CA269FB7137F74121263D3C4CC06D7D7AA1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gkpkite/OfficeTools.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D9741CA269FB7137F74121263D3C4CC06D7D7AA1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D9741CA269FB7137F74121263D3C4CC06D7D7AA1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OfficeTools</string>
+		</dict>
+	</array>
+</dict>
+</plist>

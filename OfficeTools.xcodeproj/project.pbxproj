@@ -12,7 +12,12 @@
 		F24275701B22A69200A13C7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F242756F1B22A69200A13C7B /* ViewController.m */; };
 		F24275751B22A69200A13C7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24275741B22A69200A13C7B /* Images.xcassets */; };
 		F24275841B22A69200A13C7B /* OfficeToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F24275831B22A69200A13C7B /* OfficeToolsTests.m */; };
+		F25FB1C91B2678EB00AC099A /* tool57.png in Resources */ = {isa = PBXBuildFile; fileRef = F25FB1C61B2678EB00AC099A /* tool57.png */; };
+		F25FB1CA1B2678EB00AC099A /* tool57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25FB1C71B2678EB00AC099A /* tool57@2x.png */; };
+		F25FB1CB1B2678EB00AC099A /* tool57@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25FB1C81B2678EB00AC099A /* tool57@3x.png */; };
 		F2718C751B23E2CC00844664 /* ReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2718C741B23E2CC00844664 /* ReadViewController.m */; };
+		F276ECEE1B39314100EB5052 /* data in Resources */ = {isa = PBXBuildFile; fileRef = F276ECED1B39314100EB5052 /* data */; };
+		F276ECF11B39346D00EB5052 /* FileMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = F276ECF01B39346D00EB5052 /* FileMgr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +42,14 @@
 		F242757D1B22A69200A13C7B /* OfficeToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfficeToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24275821B22A69200A13C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24275831B22A69200A13C7B /* OfficeToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OfficeToolsTests.m; sourceTree = "<group>"; };
+		F25FB1C61B2678EB00AC099A /* tool57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tool57.png; sourceTree = "<group>"; };
+		F25FB1C71B2678EB00AC099A /* tool57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tool57@2x.png"; sourceTree = "<group>"; };
+		F25FB1C81B2678EB00AC099A /* tool57@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tool57@3x.png"; sourceTree = "<group>"; };
 		F2718C731B23E2CC00844664 /* ReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadViewController.h; sourceTree = "<group>"; };
 		F2718C741B23E2CC00844664 /* ReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadViewController.m; sourceTree = "<group>"; };
+		F276ECED1B39314100EB5052 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		F276ECEF1B39346D00EB5052 /* FileMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileMgr.h; sourceTree = "<group>"; };
+		F276ECF01B39346D00EB5052 /* FileMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileMgr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F24000E11B25DE5F00B901BA /* img */ = {
+			isa = PBXGroup;
+			children = (
+				F25FB1C61B2678EB00AC099A /* tool57.png */,
+				F25FB1C71B2678EB00AC099A /* tool57@2x.png */,
+				F25FB1C81B2678EB00AC099A /* tool57@3x.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		F242755B1B22A69200A13C7B = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +101,8 @@
 		F24275661B22A69200A13C7B /* OfficeTools */ = {
 			isa = PBXGroup;
 			children = (
+				F276ECED1B39314100EB5052 /* data */,
+				F24000E11B25DE5F00B901BA /* img */,
 				F242756B1B22A69200A13C7B /* AppDelegate.h */,
 				F242756C1B22A69200A13C7B /* AppDelegate.m */,
 				F242756E1B22A69200A13C7B /* ViewController.h */,
@@ -88,6 +111,8 @@
 				F24275671B22A69200A13C7B /* Supporting Files */,
 				F2718C731B23E2CC00844664 /* ReadViewController.h */,
 				F2718C741B23E2CC00844664 /* ReadViewController.m */,
+				F276ECEF1B39346D00EB5052 /* FileMgr.h */,
+				F276ECF01B39346D00EB5052 /* FileMgr.m */,
 			);
 			path = OfficeTools;
 			sourceTree = "<group>";
@@ -167,6 +192,7 @@
 				TargetAttributes = {
 					F24275631B22A69200A13C7B = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 7BZ52JMM63;
 					};
 					F242757C1B22A69200A13C7B = {
 						CreatedOnToolsVersion = 6.2;
@@ -199,6 +225,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24275751B22A69200A13C7B /* Images.xcassets in Resources */,
+				F25FB1CB1B2678EB00AC099A /* tool57@3x.png in Resources */,
+				F25FB1CA1B2678EB00AC099A /* tool57@2x.png in Resources */,
+				F25FB1C91B2678EB00AC099A /* tool57.png in Resources */,
+				F276ECEE1B39314100EB5052 /* data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24275701B22A69200A13C7B /* ViewController.m in Sources */,
+				F276ECF11B39346D00EB5052 /* FileMgr.m in Sources */,
 				F242756D1B22A69200A13C7B /* AppDelegate.m in Sources */,
 				F2718C751B23E2CC00844664 /* ReadViewController.m in Sources */,
 				F242756A1B22A69200A13C7B /* main.m in Sources */,
@@ -259,7 +290,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kai Ping Guan (7BZ52JMM63)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kai Ping Guan (7BZ52JMM63)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -276,9 +308,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "90a00f76-e51a-4c7d-a0b8-bf485cd0e6e5";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -300,7 +333,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kai Ping Guan (7BZ52JMM63)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kai Ping Guan (7BZ52JMM63)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -311,8 +345,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "90a00f76-e51a-4c7d-a0b8-bf485cd0e6e5";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -322,10 +357,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kai Ping Guan (7BZ52JMM63)";
 				INFOPLIST_FILE = OfficeTools/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "90a00f76-e51a-4c7d-a0b8-bf485cd0e6e5";
 			};
 			name = Debug;
 		};
@@ -333,10 +371,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kai Ping Guan (7BZ52JMM63)";
 				INFOPLIST_FILE = OfficeTools/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "90a00f76-e51a-4c7d-a0b8-bf485cd0e6e5";
 			};
 			name = Release;
 		};
